@@ -5,6 +5,7 @@
 
 使用方法
 
+	var md5Save = require("gulp-md5-save");
 	var data = {}; //一倍图:md5 的 map，用于存放数据
 	var sourceTmp = ["../../view/img/**"];
         // 具体模块 img 里的图片 md5
