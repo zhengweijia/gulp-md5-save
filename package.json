@@ -1,0 +1,51 @@
+{
+  "name": "smartisan-md5-save",
+  "version": "1.0",
+  "description": "保存一倍图的 MD5 值",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Raistlin916/gulp-md5.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulp-md5"
+  ],
+  "dependencies": {
+    "gulp-util": "~2.2.14",
+    "through2": "^0.4.1"
+  },
+  "homepage": "https://github.com/Raistlin916/gulp-md5.git",
+  "author": {
+    "name": "gaok"
+  },
+  "license": "MIT",
+  "gitHead": "3b67254a6a7c006427f21d3706f9739646b049a4",
+  "bugs": {
+    "url": "https://github.com/Raistlin916/gulp-md5/issues"
+  },
+  "_id": "gulp-md5@0.1.1",
+  "_shasum": "6990189921eed21041970376bed2294cc979aa6c",
+  "_from": "gulp-md5@*",
+  "_npmVersion": "2.5.1",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "raistlin916",
+    "email": "raistlin916@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "raistlin916",
+      "email": "raistlin916@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "6990189921eed21041970376bed2294cc979aa6c",
+    "tarball": "http://registry.npmjs.org/gulp-md5/-/gulp-md5-0.1.1.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/gulp-md5/-/gulp-md5-0.1.1.tgz"
+}
