@@ -25,11 +25,12 @@ module.exports = function(size, md5Data) {
         if(md5Data) {
             var od = md5Data[sub_namepath+filename];
             if(od && od != '' && od != d) {
-                d =  calcStrMd5(d+od, size);
+                // d =  calcStrMd5(d, od, size);
+                d =  d+','+od;
             }
         }
-        // if(d=='81f6f496a0') {
-        //   console.log(relativepath+'  ;' + filename+'  re:' + md5Data['3_background.jpg']);
+        // if(filename.indexOf('mobile-logo')>=0) {
+        //   console.log(relativepath+'  ;' + filename);
         // }
         md5Data[sub_namepath+filename] = d ; //
         this.push(file);
@@ -46,7 +47,11 @@ function calcMd5(file, slice) {
 
   return slice > 0 ? md5.digest('hex').slice(0, slice) : md5.digest('hex');
 }
-function calcStrMd5(str, slice){
+function calcStrMd5(str1, str2, slice){
+    var str = str1 + str2;
+    if(str1 < str2) {
+        var str = str2 + str1;
+    }
     var md5 = crypto.createHash('md5');
     md5.update(str, 'utf8');
     return slice >0 ? md5.digest('hex').slice(0, slice) : md5.digest('hex');

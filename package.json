@@ -1,6 +1,6 @@
 {
-  "name": "smartisan-md5-save",
-  "version": "1.0",
+  "name": "gulp-md5-save",
+  "version": "0.1",
   "description": "保存一倍图的 MD5 值",
   "main": "index.js",
   "scripts": {
