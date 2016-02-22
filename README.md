@@ -1,3 +1,7 @@
+安装：
+
+npm install --save-dev gulp-md5-save
+
 说明：本代码大部分都来源于 [gulp-md5-plus](https://github.com/wpfpizicai/gulp-md5-plus)，我只是进行了改写。
 
 将制定目录里的文件进行md5编码
