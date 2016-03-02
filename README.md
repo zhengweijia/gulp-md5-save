@@ -17,3 +17,37 @@ npm install --save-dev gulp-md5-save
         .pipe(md5Save(10, data));
 
 将最终的数据保存到 data 中。
+
+#Example:
+
+Images path:
+
+	img
+	├── pc
+	│   ├── a.jpg
+	│   ├── a@2x.jpg
+	│   ├── b.jpg
+	├── mobile
+	│   ├── a.jpg
+	│   ├── a@2x.jpg
+	└── a.jpg
+
+Code:
+
+	var data = {}; 
+	var sourceTmp = ["./img/**"];
+    gulp.src(sourceTmp)
+        .pipe(md5Save(10, data));
+
+Result:
+
+	console.log(data);
+	->
+	{
+		'a.jpg':'3b67254a6a,b372f64f04,55e4269b5e',
+		'a@2x.jpg':'7a541974a7,afd0e7c69a',
+		'b.jpg':'629ccc774a'
+	}
+
+Images No change.
+
